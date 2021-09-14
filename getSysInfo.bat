@@ -1,13 +1,13 @@
-::µÃµ½ÏµÍ³ÐÅÏ¢.bat£¬ÔËÐÐbatÎÄ¼þ¼´¿É
-::ÏµÍ³ÐÅÏ¢Êä³öµ½HTMLÎÄ¼þ,²é¿´°ïÖú£º wmic /?
-::wmic [ÏµÍ³²ÎÊýÃû] list [brief|full] /format:hform. >|>> [ÎÄ¼þÃû]
+::å¾—åˆ°ç³»ç»Ÿä¿¡æ¯.batï¼Œè¿è¡Œbatæ–‡ä»¶å³å¯
+::ç³»ç»Ÿä¿¡æ¯è¾“å‡ºåˆ°HTMLæ–‡ä»¶,æŸ¥çœ‹å¸®åŠ©ï¼š wmic /?
+::wmic [ç³»ç»Ÿå‚æ•°å] list [brief|full] /format:hform. >|>> [æ–‡ä»¶å]
 @echo off
 
-CHCP 936
+CHCP 65001
 
 set f=%USERPROFILE%\Desktop
 
-::½Å±¾¿ªÊ¼
+::è„šæœ¬å¼€å§‹
 
 wmic bios list brief   /format:hform > %f%\PCinfo.html
 wmic baseboard list brief   /format:hform >>%f%\PCinfo.html
